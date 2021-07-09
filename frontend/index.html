@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="assets/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+
+</head>
+
+<body lang="es">
+<nav>
+    <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">UBI</a>
+
+    </div>
+</nav>
+<div class="container">
+
+    <div class="row">
+        <div class="col s6 m4 l3">
+            <p class="center-align">
+                <i class="far fa-user fa-7x"></i>
+            </p>
+        </div>
+        <div class="col s6 m8 l9">
+            <p><b>Nombre: </b> <span id="labelNombre"></span></p>
+            <p><b>Apellido: </b> <span id="labelApellido"></span></p>
+            <p><b>Descripcion: </b> <span id="labelDescripcion"></span></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m5">
+            <p class="center-align">Mis estudios</p>
+
+            <div id="htmresu"></div>
+
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Agregar
+                <i class="material-icons right">send</i>
+            </a>
+
+        </div>
+        <div class="col s12 m5">
+            <p class="center-align">Mis habilidades</p>
+            <ul class="collection" id="htmresux">
+
+            </ul>
+
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Agregar
+                <i class="material-icons right">send</i>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<div id="modal2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h4>Registro de habilidades</h4>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="habilidad" type="text" class="validate">
+                <label for="habilidad">Habilidad</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="nivel" type="range" class="validate">
+                <label for="nivel">Nivel</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="passwordHab" type="text" value="5217b4cfe1c9d48e6a0627182d981baf" class="validate">
+                <label for="passwordHab">Paswword</label>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+        <a class="waves-effect waves-green btn-flat" id="registrarHab">Agregar</a>
+    </div>
+</div>
+
+
+<div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h4>Registro de estudios</h4>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="nombre" type="text" class="validate">
+                <label for="nombre">Nombre</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="institucion" type="text" class="validate">
+                <label for="institucion">Institucion</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <select id="pais">
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="1">Bolivia</option>
+                </select>
+                <label>Pais</label>
+            </div>
+            <div class="input-field col s6">
+                <select id="ciudad">
+                    <option value="" disabled selected>Departamento</option>
+                    <option value="1">La Paz</option>
+                    <option value="2">Santa cruz</option>
+                    <option value="3">Cochabamba</option>
+                    <option value="4">Sucre</option>
+                    <option value="5">pando</option>
+                </select>
+                <label>Pais</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="inicio" type="date" class="validate">
+                <label for="inicio">A&#241;o inicio</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="final" type="date" class="validate">
+                <label for="final">A&#241;o final</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="password" type="text" value="5217b4cfe1c9d48e6a0627182d981baf" class="validate">
+                <label for="password">Contrase&#241;a</label>
+            </div>
+            <div class="input-field col s6">
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+        <a class="waves-effect waves-green btn-flat" id="registrarData">Agregar</a>
+    </div>
+</div>
+
+<script src="jquery-3.6.0.min.js"></script>
+<script src="assets/materialize/js/materialize.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
